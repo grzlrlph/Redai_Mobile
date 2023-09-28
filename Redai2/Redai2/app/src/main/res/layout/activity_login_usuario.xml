@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginUsuario">
+
+    <ImageButton
+        android:id="@+id/btnVoltar_LoginActivity"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textViewTitulo_LoginActivity"
+        android:layout_width="296dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="61.33dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Bem-vindo de volta!"
+        android:textColor="#131313"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewSubtitulo_LoginActivity"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="Entre com seu email e senha"
+        android:textColor="#131313" />
+
+    <TextView
+        android:id="@+id/textViewEmail_LoginActivity"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:text="Email"
+        android:fontFamily="@font/poppins"
+        android:textColor="#131313"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail_LoginActivity"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Yelsew1904@gmail.com"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <TextView
+        android:id="@+id/textViewSenha_LoginActivity"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:text="Senha"
+        android:fontFamily="@font/poppins"
+        android:textColor="#131313"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextSenha_LoginActivity"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Senha"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkBoxLembrarSenha_LoginActivity"
+            android:layout_width="200dp"
+            android:layout_height="22dp"
+            android:text="Lembrar minha senha"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="24dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEsqueciMinhaSenha_LoginActivity"
+            android:layout_width="150dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="24dp"
+           android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:textColor="#131313"
+            android:background="@drawable/sublinhado"
+            android:gravity="center"
+            android:text="@string/esqueci_minha_senha"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins"
+            android:textAllCaps="false"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageButton
+        android:id="@+id/btnEntrar_LoginActivity"
+        android:layout_width="370dp"
+        android:layout_height="68dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="39dp"
+        app:srcCompat="@drawable/btnentrar"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="45dp"
+            android:fontFamily="@font/poppins"
+            android:text="Você não tem uma conta?"
+            android:textAlignment="textEnd"
+            android:textColor="#131313" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadastrar_LoginActivity"
+            android:layout_width="160dp"
+            android:layout_height="18dp"
+            android:background="@null"
+            android:fontFamily="@font/poppins_bold"
+            android:text=" Cadastre-se aqui"
+            android:layout_marginLeft="2dp"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FA733E" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
