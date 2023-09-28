@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CadastroUsuario">
+
+
+    <ImageButton
+        android:id="@+id/btnVoltar_CadastroActivity"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textViewTitulo_CadastroActivity"
+        android:layout_width="296dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="61.33dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Bem-vindo ao Redaí!"
+        android:textColor="#131313"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewSubtitulo_CadastroActivity"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="Vamos começar com o básico"
+        android:textColor="#131313" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="120dp"
+        android:layout_height="21dp"
+        android:text="Nome Completo"
+        android:fontFamily="@font/poppins"
+        android:textColor="#131313"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextNome_CadastroActivity"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Yelsew Fonseca"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <TextView
+        android:id="@+id/textViewUsername_CadastroActivity"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:text="Nome de Usuário"
+        android:fontFamily="@font/poppins"
+        android:textColor="#131313"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsername_CadastroActivity"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Yelsew1904"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <TextView
+        android:id="@+id/textViewEmail_CadastroActivity"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:text="Email"
+        android:fontFamily="@font/poppins"
+        android:textColor="#131313"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail_CadastroActivity"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Yelsew1904@gmail.com"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <TextView
+        android:id="@+id/textViewSenha_CadastroActivity"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:text="Senha"
+        android:fontFamily="@font/poppins"
+        android:textColor="#131313"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextSenha_CadastroActivity"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Senha"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_edittext"/>
+
+    <ImageButton
+        android:id="@+id/btnCadastrar_CadastroActivity"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/btncadastrar" />
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="45dp"
+            android:fontFamily="@font/poppins"
+            android:text="Já tem uma conta?"
+            android:textAlignment="textEnd"
+            android:textColor="#131313" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEntrar_CadastroActivity"
+            android:layout_width="160dp"
+            android:layout_height="18dp"
+            android:background="@null"
+            android:fontFamily="@font/poppins_bold"
+            android:text=" Entre aqui"
+            android:layout_marginLeft="2dp"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FA733E" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</LinearLayout>
