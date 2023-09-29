@@ -91,6 +91,7 @@
             android:id="@+id/checkBoxLembrarSenha_LoginActivity"
             android:layout_width="200dp"
             android:layout_height="22dp"
+            android:textSize="12sp"
             android:text="Lembrar minha senha"
             android:fontFamily="@font/poppins"
             android:layout_marginTop="24dp"
@@ -124,9 +125,10 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_marginTop="12dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="18dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             android:layout_width="190dp"

@@ -57,7 +57,7 @@
         android:inputType="text"
         android:hint="Yelsew Fonseca"
         android:paddingLeft="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="11dp"
         android:background="@drawable/bg_edittext"/>
 
@@ -79,7 +79,7 @@
         android:inputType="text"
         android:hint="Yelsew1904"
         android:paddingLeft="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="11dp"
         android:background="@drawable/bg_edittext"/>
 
@@ -97,13 +97,13 @@
         android:id="@+id/editTextEmail_CadastroActivity"
         android:layout_width="360dp"
         android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Yelsew1904@gmail.com"
-        android:paddingLeft="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="11dp"
-        android:background="@drawable/bg_edittext"/>
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="Yelsew1904@gmail.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp" />
 
     <TextView
         android:id="@+id/textViewSenha_CadastroActivity"
@@ -123,7 +123,7 @@
         android:inputType="textPassword"
         android:hint="Senha"
         android:paddingLeft="10dp"
-        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
         android:layout_marginTop="11dp"
         android:background="@drawable/bg_edittext"/>
 
