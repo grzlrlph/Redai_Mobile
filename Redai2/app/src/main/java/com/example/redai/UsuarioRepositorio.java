@@ -1,9 +1,12 @@
 package com.example.redai;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
+import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
 
@@ -61,6 +64,37 @@ public class UsuarioRepositorio {
         if (qtd>1){
             return true;
         }else{
+            return false;
+        }
+    }
+
+
+    public boolean logarUsuario(Usuario usuario){
+        SQLiteDatabase db = helper.getReadableDatabase();
+        int exito = 0;
+        String sql_busca_usuario = "SELECT * from"
+                + DbHelper.TABELA_USUARIO
+                + " WHERE "
+                + DbHelper.COLUNA_EMAIL + "="
+                + "'" + usuario.getEmail() + "'";
+        Cursor cursor = db.rawQuery(sql_busca_usuario, null);
+        while (cursor.moveToNext()){
+            if(usuario.getEmail().equals(cursor.getString(cursor.getColumnIndex(helper.COLUNA_EMAIL)))){
+                if (usuario.getEmail().equals(cursor.getString(cursor.getColumnIndex(helper.COLUNA_SENHA)))){
+                    exito = 1;
+                }else{
+                    Log.d("ERRO", "senha incorreta ou não encontrada");
+                    exito = 0;
+                }
+
+            }else{
+                Log.d("ERRO", "Login não encontrado");
+                exito = 0;
+            }
+        }
+        if (exito == 1){
+            return true;
+        }else {
             return false;
         }
     }
