@@ -3,14 +3,13 @@ package com.example.redai;
 import android.graphics.Bitmap;
 
 public class Usuario {
-    private String nome, username, email;
-    private int senha;
+    private String nome, username, email, senha;
     private Bitmap fotoPerfil;
 
     public Usuario() {
     }
 
-    public Usuario(String nome, String username, String email, int senha, Bitmap fotoPerfil) {
+    public Usuario(String nome, String username, String email, String senha, Bitmap fotoPerfil) {
         this.nome = nome;
         this.username = username;
         this.email = email;
@@ -42,11 +41,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public int getSenha() {
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenha(int senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 

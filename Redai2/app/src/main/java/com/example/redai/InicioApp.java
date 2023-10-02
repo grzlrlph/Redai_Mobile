@@ -1,4 +1,4 @@
-package com.example.redai;
+package com.example.redai.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.redai.R;
 
 public class InicioApp extends AppCompatActivity {
     Button  btnCadastrar;

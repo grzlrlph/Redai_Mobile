@@ -1,4 +1,4 @@
-package com.example.redai;
+package com.example.redai.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,13 +9,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.example.redai.DAOUsuario;
+import com.example.redai.R;
+import com.example.redai.Usuario;
 
 public class CadastroUsuario extends AppCompatActivity {
 
     Button  btnLogin;
     ImageButton btnVoltar, btnCadastrar;
     EditText editTextNome, editTextUsername, editTextEmail, editTextSenha;
-    UsuarioRepositorio repositorio;
+    DAOUsuario daoUsuario;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +37,28 @@ public class CadastroUsuario extends AppCompatActivity {
                 String username = editTextUsername.getText().toString();
                 String nome = editTextNome.getText().toString();
                 String email = editTextEmail.getText().toString();
-                int senha = Integer.parseInt(editTextSenha.getText().toString());
+                String senha = editTextSenha.getText().toString();
 
-                Usuario usuario = new Usuario(username, nome, email, senha, null);
-                repositorio.cadastrarUsuario(usuario);
+                if (username.isEmpty() || nome.isEmpty() || email.isEmpty() || senha.isEmpty()){
+                    Toast.makeText(CadastroUsuario.this,
+                            "Por favor! Preencha todos os campos.", Toast.LENGTH_SHORT).show();
+                }else{
+                    Usuario usuario = new Usuario(username, nome, email, senha, null);
+                    if (daoUsuario.cadastrarUsuario(usuario)){
+                        Toast.makeText(CadastroUsuario.this,
+                                "Cadastro realizado com êxito! Seja bem-vindo ao Redaí!",
+                                Toast.LENGTH_SHORT).show();
+                        Intent cadastroHomepage = new Intent(CadastroUsuario.this, Homepage.class);
+                    }else{
+                        Toast.makeText(CadastroUsuario.this,
+                                "Houve uma falha na realização do seu cadastro. Tente novamente!",
+                                Toast.LENGTH_SHORT).show();
+                        editTextUsername.getText().clear();
+                        editTextNome.getText().clear();
+                        editTextEmail.getText().clear();
+                        editTextSenha.getText().clear();
+                    }
+                }
             }
         });
 
