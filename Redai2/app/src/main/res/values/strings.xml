@@ -4,4 +4,19 @@
     <string name="criar_conta"><u>Criar Conta</u>
     </string>
     <string name="esqueci_minha_senha"><u>Esqueci minha senha</u></string>
+    <string name="bemvindo">Bem-vindo ao Redaí!</string>
+    <string name="vamosComecar">Vamos começar com o básico</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="nome_de_usuario">Nome de Usuário</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="hintNome">Katniss Everdeen</string>
+    <string name="hintusername">katniss12d</string>
+    <string name="hintemail">katnisseverdeen12@gmail.com</string>
+    <string name="hintSenha">.....</string>
+    <string name="btn_entre_aqui">Entre aqui</string>
+    <string name="btnPossuiConta">Já tem uma conta?</string>
+    <string name="bemVindoVolta">Bem-vindo de volta!</string>
+    <string name="naoPossuiConta">Você não tem uma conta?</string>
+    <string name="btnCadastrese_aqui">Cadastre-se aqui</string>
 </resources>
