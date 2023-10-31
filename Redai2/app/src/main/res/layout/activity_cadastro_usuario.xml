@@ -8,23 +8,24 @@
     tools:context=".CadastroUsuario">
 
 
-    <ImageButton
+    <!--<ImageButton
         android:id="@+id/btnVoltar_CadastroActivity"
         android:layout_width="23dp"
         android:layout_height="23dp"
-        android:layout_marginTop="25dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
         android:background="@null"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+        android:contentDescription="voltar"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />-->
 
     <TextView
         android:id="@+id/textViewTitulo_CadastroActivity"
         android:layout_width="296dp"
         android:layout_height="28dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="61.33dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Bem-vindo ao Redaí!"
+        android:text="@string/bemvindo"
         android:textColor="#131313"
         android:textSize="24sp" />
 
@@ -36,18 +37,18 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins"
-        android:text="Vamos começar com o básico"
+        android:text="@string/vamosComecar"
         android:textColor="#131313" />
 
     <TextView
         android:id="@+id/textViewNome"
         android:layout_width="120dp"
         android:layout_height="21dp"
-        android:text="Nome Completo"
+        android:text="@string/nome_completo"
         android:fontFamily="@font/poppins"
         android:textColor="#131313"
-        android:layout_marginTop="65dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="25dp"/>
 
     <EditText
         android:id="@+id/editTextNome_CadastroActivity"
@@ -55,7 +56,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="Yelsew Fonseca"
+        android:hint="@string/hintNome"
         android:paddingLeft="10dp"
         android:layout_gravity="center"
         android:layout_marginTop="11dp"
@@ -65,11 +66,11 @@
         android:id="@+id/textViewUsername_CadastroActivity"
         android:layout_width="130dp"
         android:layout_height="21dp"
-        android:text="Nome de Usuário"
+        android:text="@string/nome_de_usuario"
         android:fontFamily="@font/poppins"
         android:textColor="#131313"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginLeft="25dp"/>
 
     <EditText
         android:id="@+id/editTextUsername_CadastroActivity"
@@ -77,7 +78,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="Yelsew1904"
+        android:hint="@string/hintusername"
         android:paddingLeft="10dp"
         android:layout_gravity="center"
         android:layout_marginTop="11dp"
@@ -87,11 +88,11 @@
         android:id="@+id/textViewEmail_CadastroActivity"
         android:layout_width="130dp"
         android:layout_height="21dp"
-        android:text="Email"
+        android:text="@string/email"
         android:fontFamily="@font/poppins"
         android:textColor="#131313"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginLeft="25dp"/>
 
     <EditText
         android:id="@+id/editTextEmail_CadastroActivity"
@@ -101,7 +102,7 @@
         android:layout_marginTop="11dp"
         android:background="@drawable/bg_edittext"
         android:ems="10"
-        android:hint="Yelsew1904@gmail.com"
+        android:hint="@string/hintemail"
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp" />
 
@@ -109,11 +110,11 @@
         android:id="@+id/textViewSenha_CadastroActivity"
         android:layout_width="130dp"
         android:layout_height="21dp"
-        android:text="Senha"
+        android:text="@string/senha"
         android:fontFamily="@font/poppins"
         android:textColor="#131313"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginLeft="25dp"/>
 
     <EditText
         android:id="@+id/editTextSenha_CadastroActivity"
@@ -121,7 +122,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="Senha"
+        android:hint="@string/hintSenha"
         android:paddingLeft="10dp"
         android:layout_gravity="center"
         android:layout_marginTop="11dp"
@@ -133,22 +134,24 @@
         android:layout_height="68dp"
         android:scaleType="centerInside"
         android:background="@null"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="34dp"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/btncadastrar" />
+        app:srcCompat="@drawable/btncadastrar"
+        android:contentDescription="Botão para confirmar cadastro" />
     
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="18dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <TextView
             android:layout_width="180dp"
             android:layout_height="18dp"
             android:layout_marginStart="45dp"
             android:fontFamily="@font/poppins"
-            android:text="Já tem uma conta?"
+            android:text="@string/btnPossuiConta"
             android:textAlignment="textEnd"
             android:textColor="#131313" />
 
@@ -158,11 +161,13 @@
             android:layout_height="18dp"
             android:background="@null"
             android:fontFamily="@font/poppins_bold"
-            android:text=" Entre aqui"
+            android:text="@string/btn_entre_aqui"
             android:layout_marginLeft="2dp"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
-            android:textColor="#FA733E" />
+            android:textColor="#FA733E"
+            android:contentDescription="Botão para se redirecionar para a aba de login"
+            />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 

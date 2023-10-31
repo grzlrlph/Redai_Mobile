@@ -7,14 +7,14 @@
     android:orientation="vertical"
     tools:context=".LoginUsuario">
 
-    <ImageButton
+    <!--<ImageButton
         android:id="@+id/btnVoltar_LoginActivity"
         android:layout_width="23dp"
         android:layout_height="23dp"
         android:layout_marginTop="25dp"
         android:layout_marginLeft="15dp"
         android:background="@null"
-        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />-->
 
     <TextView
         android:id="@+id/textViewTitulo_LoginActivity"
@@ -23,7 +23,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="61.33dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Bem-vindo de volta!"
+        android:text="@string/bemVindoVolta"
         android:textColor="#131313"
         android:textSize="24sp" />
 
@@ -35,14 +35,14 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins"
-        android:text="Entre com seu email e senha"
+        android:text="@string/vamosComecar"
         android:textColor="#131313" />
 
     <TextView
         android:id="@+id/textViewEmail_LoginActivity"
         android:layout_width="130dp"
         android:layout_height="21dp"
-        android:text="Email"
+        android:text="@string/email"
         android:fontFamily="@font/poppins"
         android:textColor="#131313"
         android:layout_marginTop="72dp"
@@ -54,7 +54,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="Yelsew1904@gmail.com"
+        android:hint="@string/hintemail"
         android:paddingLeft="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="11dp"
@@ -64,7 +64,7 @@
         android:id="@+id/textViewSenha_LoginActivity"
         android:layout_width="130dp"
         android:layout_height="21dp"
-        android:text="Senha"
+        android:text="@string/senha"
         android:fontFamily="@font/poppins"
         android:textColor="#131313"
         android:layout_marginTop="20dp"
@@ -76,7 +76,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="Senha"
+        android:hint="@string/hintSenha"
         android:paddingLeft="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="11dp"
@@ -121,12 +121,13 @@
         android:scaleType="centerInside"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="39dp"
-        app:srcCompat="@drawable/btnentrar"/>
+        app:srcCompat="@drawable/btnentrar"
+        android:contentDescription="Botão para confirmar dados e realizar login" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_marginTop="12dp"
         android:layout_width="wrap_content"
-        android:layout_height="18dp"
+        android:layout_height="48dp"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
 
@@ -135,17 +136,17 @@
             android:layout_height="18dp"
             android:layout_marginStart="45dp"
             android:fontFamily="@font/poppins"
-            android:text="Você não tem uma conta?"
+            android:text="@string/naoPossuiConta"
             android:textAlignment="textEnd"
             android:textColor="#131313" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCadastrar_LoginActivity"
             android:layout_width="160dp"
-            android:layout_height="18dp"
+            android:layout_height="48dp"
             android:background="@null"
             android:fontFamily="@font/poppins_bold"
-            android:text=" Cadastre-se aqui"
+            android:text="@string/btnCadastrese_aqui"
             android:layout_marginLeft="2dp"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
