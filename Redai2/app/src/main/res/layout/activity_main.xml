@@ -22,8 +22,7 @@
         android:id="@+id/imageLogo"
         android:layout_width="123dp"
         android:layout_height="136dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="112dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,13 +32,12 @@
         android:id="@+id/btnEntrar"
         android:layout_width="189dp"
         android:layout_height="106dp"
-        android:layout_marginBottom="1dp"
         android:background="@null"
         android:scaleType="centerInside"
         android:src="@drawable/btnentrar_logon"
-        app:layout_constraintBottom_toTopOf="@+id/btnCriarConta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="540dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCriarConta"
@@ -47,7 +45,7 @@
         android:layout_height="57dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/sublinhado"
         android:gravity="center"
         android:text="@string/criar_conta"
@@ -55,9 +53,10 @@
         android:textAppearance="@style/criar_conta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageBackground" />
+
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

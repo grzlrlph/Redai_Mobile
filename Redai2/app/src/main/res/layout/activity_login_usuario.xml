@@ -101,7 +101,7 @@
             android:layout_width="150dp"
             android:layout_height="21dp"
             android:layout_marginTop="24dp"
-           android:layout_marginLeft="15dp"
+            android:layout_marginLeft="15dp"
             android:textSize="12sp"
             android:textColor="#131313"
             android:background="@drawable/sublinhado"

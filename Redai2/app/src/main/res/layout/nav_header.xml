@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_nav">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/logo"
+        app:civ_border_width="2dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+         />
+
+    <TextView
+        android:id="@+id/nav_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/app_name"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/nav_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hintemail"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"/>
+
+</LinearLayout>
