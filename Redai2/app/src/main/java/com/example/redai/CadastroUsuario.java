@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class CadastroUsuario extends AppCompatActivity {
 
     Button  btnLogin;
-    ImageButton  btnCadastrar;
+    ImageButton btnVoltar, btnCadastrar;
     EditText editTextNome, editTextUsername, editTextEmail, editTextSenha;
     DAOUsuario daoUsuario;
 
@@ -26,7 +26,7 @@ public class CadastroUsuario extends AppCompatActivity {
 
         vinculacao();
         LoginIntent();
-
+        TelaInicialIntent();
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,14 @@ public class CadastroUsuario extends AppCompatActivity {
 
     }
 
-
+    private void TelaInicialIntent() {
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
     private void LoginIntent() {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +79,6 @@ public class CadastroUsuario extends AppCompatActivity {
     }
     private void vinculacao() {
         btnLogin = findViewById(R.id.btnEntrar_CadastroActivity);
-
         btnCadastrar = findViewById(R.id.btnCadastrar_CadastroActivity);
         editTextNome = findViewById(R.id.editTextNome_CadastroActivity);
         editTextUsername = findViewById(R.id.editTextUsername_CadastroActivity);

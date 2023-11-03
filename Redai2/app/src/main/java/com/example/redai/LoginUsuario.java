@@ -22,6 +22,7 @@ public class LoginUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_login_usuario);
 
         initComponents();
+        telaInicialIntent();
         intentCadastro();
 
         btnEntrar_LoginActivity.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +62,14 @@ public class LoginUsuario extends AppCompatActivity {
         });
     }
 
-
+    private void telaInicialIntent() {
+        btnVoltar_LoginActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
 
     private void initComponents() {
         editTextEmail_LoginActivity = findViewById(R.id.editTextEmail_LoginActivity);
