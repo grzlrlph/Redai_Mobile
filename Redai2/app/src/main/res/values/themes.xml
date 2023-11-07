@@ -11,13 +11,10 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#242424</item>
     </style>
-
-    <style name="Theme.Redai.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
     </style>
 
-    <style name="Theme.Redai.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.Redai.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
