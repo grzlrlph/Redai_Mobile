@@ -14,7 +14,7 @@ public class LoginUsuario extends AppCompatActivity {
     EditText editTextEmail_LoginActivity, editTextSenha_LoginActivity;
     Button btnCadastro_LoginActivity;
     ImageButton btnVoltar_LoginActivity, btnEntrar_LoginActivity;
-    DAOUsuario daoUsuario;
+    DAOUsuario daoUsuario = new DAOUsuario();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

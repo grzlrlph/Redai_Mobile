@@ -16,7 +16,7 @@ public class CadastroUsuario extends AppCompatActivity {
     Button  btnLogin;
     ImageButton btnVoltar, btnCadastrar;
     EditText editTextNome, editTextUsername, editTextEmail, editTextSenha;
-    DAOUsuario daoUsuario;
+    DAOUsuario daoUsuario = new DAOUsuario();
 
 
     @Override
