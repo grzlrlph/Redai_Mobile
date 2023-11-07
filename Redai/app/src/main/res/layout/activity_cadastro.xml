@@ -4,6 +4,234 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroActivity">
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/bemvindo"
+        android:textColor="#131313"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text= "@string/vamosComecar"
+        android:textColor="#131313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="56dp"
+        android:text= "@string/nome_completo"
+        android:textColor="#131313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextNome_CadastroActivity"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint= "@string/hintNome"
+        android:inputType="text"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="15dp"
+        android:textColor="#B6B6B6"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
+
+    <TextView
+        android:id="@+id/textViewUsername_CadastroActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:text= "@string/nome_de_usuario"
+        android:textColor="#131313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome_CadastroActivity" />
+
+
+    <EditText
+        android:id="@+id/editTextUsername_CadastroActivity"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="@string/hintusername"
+        android:inputType="text"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="15dp"
+        android:textColor="#B6B6B6"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsername_CadastroActivity" />
+
+    <TextView
+        android:id="@+id/textViewEmail_CadastroActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:text= "@string/email"
+        android:textColor="#131313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername_CadastroActivity"/>
+
+    <EditText
+        android:id="@+id/editTextEmail_LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="seuemail@gmail.com"
+        android:inputType="text"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="15dp"
+        android:textColor="#B6B6B6"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail_CadastroActivity" />
+
+    <TextView
+        android:id="@+id/textViewSenha_LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:text="Senha"
+        android:textColor="#131313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail_LoginActivity" />
+
+    <EditText
+        android:id="@+id/editTextSenha_LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="@string/hintSenha"
+        android:inputType="text"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="15dp"
+        android:textColor="#B6B6B6"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSenha_LoginActivity" />
+
+    <!--<LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenha_LoginActivity">
+
+        <CheckBox
+            android:id="@+id/checkBoxLembrarSenha_LoginActivity"
+            android:layout_width="200dp"
+            android:layout_height="22dp"
+            android:text="Lembrar minha senha"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEsqueciMinhaSenha_LoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Esqueci minha senha"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="false"
+            android:textColor="#131313"
+            android:textSize="12sp" />
+    </LinearLayout> -->
+
+    <ImageButton
+        android:id="@+id/btnEntrar_LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="15dp"
+        android:background= "@drawable/btncadastrar"
+        android:text="Entrar"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenha_LoginActivity" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEntrar_LoginActivity">
+
+        <TextView
+            android:id="@+id/textViewTexto_Cadastro"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/btnPossuiConta"
+            android:textAlignment="textEnd"
+            android:textColor="#131313" />
+
+        <Button
+            android:id="@+id/btnCadastrar_LoginActivity"
+            android:layout_width="163dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/textViewTexto_Cadastro"
+            android:background="@android:color/transparent"
+            android:text="@string/btn_entre_aqui"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FA733E"
+            android:contentDescription="Botão para se redirecionar para a aba de login"/>
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
