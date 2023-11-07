@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "137529574622",
+    "project_id": "redai-f9990",
+    "storage_bucket": "redai-f9990.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137529574622:android:04835b9fe9378187aeee4f",
+        "android_client_info": {
+          "package_name": "com.example.redai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM81kzeJhC1dArPjiHtsZ9uKC6_0axOeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
