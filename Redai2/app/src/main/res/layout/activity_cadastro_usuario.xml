@@ -26,7 +26,7 @@
         android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/bemvindo"
-        android:textColor="@color/preto_redai"
+        android:textColor="#131313"
         android:textSize="24sp" />
 
     <TextView
@@ -38,7 +38,7 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins"
         android:text="@string/vamosComecar"
-        android:textColor="@color/preto_redai" />
+        android:textColor="#131313" />
 
     <TextView
         android:id="@+id/textViewNome"
@@ -46,7 +46,7 @@
         android:layout_height="21dp"
         android:text="@string/nome_completo"
         android:fontFamily="@font/poppins"
-        android:textColor="@color/preto_redai"
+        android:textColor="#131313"
         android:layout_marginTop="38dp"
         android:layout_marginLeft="25dp"/>
 
@@ -68,7 +68,7 @@
         android:layout_height="21dp"
         android:text="@string/nome_de_usuario"
         android:fontFamily="@font/poppins"
-        android:textColor="@color/preto_redai"
+        android:textColor="#131313"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"/>
 
@@ -90,7 +90,7 @@
         android:layout_height="21dp"
         android:text="@string/email"
         android:fontFamily="@font/poppins"
-        android:textColor="@color/preto_redai"
+        android:textColor="#131313"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"/>
 
@@ -112,7 +112,7 @@
         android:layout_height="21dp"
         android:text="@string/senha"
         android:fontFamily="@font/poppins"
-        android:textColor="@color/preto_redai"
+        android:textColor="#131313"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"/>
 
@@ -140,34 +140,34 @@
         android:contentDescription="Botão para confirmar cadastro" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="18dp"
             android:layout_marginStart="45dp"
             android:fontFamily="@font/poppins"
             android:text="@string/btnPossuiConta"
             android:textAlignment="textEnd"
-            android:textColor="@color/preto_redai" />
+            android:textColor="#131313" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnEntrar_CadastroActivity"
-            android:layout_width="160dp"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="2dp"
             android:background="@null"
+            android:contentDescription="Botão para se redirecionar para a aba de login"
             android:fontFamily="@font/poppins_bold"
             android:text="@string/btn_entre_aqui"
-            android:layout_marginLeft="2dp"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
-            android:textColor="@color/laranja"
-            android:contentDescription="Botão para se redirecionar para a aba de login"
-            />
+            android:textColor="#FA733E" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
