@@ -14,9 +14,9 @@ import android.widget.Toast;
 public class CadastroUsuario extends AppCompatActivity {
 
     Button  btnLogin;
-    ImageButton btnVoltar, btnCadastrar;
+    ImageButton btnCadastrar;
     EditText editTextNome, editTextUsername, editTextEmail, editTextSenha;
-    DAOUsuario daoUsuario = new DAOUsuario();
+    DAOUsuario daoUsuario = new DAOUsuario(this);
 
 
     @Override
@@ -26,7 +26,7 @@ public class CadastroUsuario extends AppCompatActivity {
 
         vinculacao();
         LoginIntent();
-        TelaInicialIntent();
+
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,14 +60,7 @@ public class CadastroUsuario extends AppCompatActivity {
 
     }
 
-    private void TelaInicialIntent() {
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
+
     private void LoginIntent() {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

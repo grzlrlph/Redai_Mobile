@@ -1,6 +1,7 @@
 package com.example.redai;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
@@ -9,6 +10,10 @@ import java.io.ByteArrayOutputStream;
 
 public class DAOUsuario {
     private static DBHelper helper;
+
+    public DAOUsuario(Context context) {
+        helper = new DBHelper(context);
+    }
 
     public static boolean cadastrarUsuario(Usuario usuario){
         //instancia do banco e metodo pra sobrescrever
@@ -21,12 +26,12 @@ public class DAOUsuario {
 
         ByteArrayOutputStream stream = new ByteArrayOutputStream(); //array de bytes
         //comprime a foto, transforma em um array de bytes e ajusta a qualidade
-        usuario.getFotoPerfil().compress(Bitmap.CompressFormat.PNG, 100, stream);
-        valores.put(DBHelper.COLUNA_FOTO_PERFIL, stream.toByteArray());
-
-        //realiza o cadastro no banco
+        //usuario.getFotoPerfil().compress(Bitmap.CompressFormat.PNG, 100, stream);
+//        valores.put(DBHelper.COLUNA_FOTO_PERFIL, stream.toByteArray());
+//        valores.put(DBHelper.COLUNA_FOTO_PERFIL, (String) null);
+//        //realiza o cadastro no banco
         long id = db.insert(DBHelper.TABELA_USUARIO, null, valores);
-        db.close(); // fecha o banco
+//        db.close(); // fecha o banco
 
         if (id != -1){
             return true;

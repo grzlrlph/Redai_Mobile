@@ -14,11 +14,11 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String DBNome = "RedaiDB";
     private static final int VERSAO = 2;
     public static final String TABELA_USUARIO = "Usuario";
-    public static final String COLUNA_USERNAME = "Nome de Usuário";
+    public static final String COLUNA_USERNAME = "Nome_de_Usuario";
     public static final String COLUNA_NOME = "Nome";
     public static final String COLUNA_EMAIL = "Email";
     public static final String COLUNA_SENHA = "Senha";
-    public static final String COLUNA_FOTO_PERFIL = "Foto de Perfil";
+    public static final String COLUNA_FOTO_PERFIL = "Foto_de_Perfil";
 
 
 
@@ -33,7 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 + COLUNA_NOME + " TEXT NOT NULL, "
                 + COLUNA_EMAIL + " TEXT NOT NULL, "
                 + COLUNA_SENHA + " TEXT NOT NULL, "
-                + COLUNA_FOTO_PERFIL + " BLOB"
+                + COLUNA_FOTO_PERFIL + " BLOB "
                 + ");";
         db.execSQL(sql);
     }

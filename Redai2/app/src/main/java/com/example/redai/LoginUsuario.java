@@ -13,16 +13,16 @@ import android.widget.Toast;
 public class LoginUsuario extends AppCompatActivity {
     EditText editTextEmail_LoginActivity, editTextSenha_LoginActivity;
     Button btnCadastro_LoginActivity;
-    ImageButton btnVoltar_LoginActivity, btnEntrar_LoginActivity;
-    DAOUsuario daoUsuario = new DAOUsuario();
+    ImageButton  btnEntrar_LoginActivity;
+    DAOUsuario daoUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_usuario);
-
+        daoUsuario = new DAOUsuario(getApplicationContext());
         initComponents();
-        telaInicialIntent();
+
         intentCadastro();
 
         btnEntrar_LoginActivity.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +40,7 @@ public class LoginUsuario extends AppCompatActivity {
                                 "Login realizado com êxito. Seja bem-vindo ao Redaí!",
                                 Toast.LENGTH_SHORT).show();
                         Intent loginHomepage = new Intent(LoginUsuario.this, Homepage.class);
+                        startActivity(loginHomepage);
                     }else {
                         Toast.makeText(LoginUsuario.this,
                                 "Email ou senha incorretos! Verifique e tente novamente.",
@@ -62,14 +63,7 @@ public class LoginUsuario extends AppCompatActivity {
         });
     }
 
-    private void telaInicialIntent() {
-        btnVoltar_LoginActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
+
 
     private void initComponents() {
         editTextEmail_LoginActivity = findViewById(R.id.editTextEmail_LoginActivity);
